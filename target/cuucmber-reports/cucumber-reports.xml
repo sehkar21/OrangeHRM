@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="12.834">
+    <testcase classname="Login into OrangeHRM" name="Login into OrangeHRM" time="6.109">
+        <system-out><![CDATA[Given i launch the browser and enter into orangeHRM site....................passed
+Given user enters "Admin" and "admin123"....................................passed
+And click on the login button...............................................passed
+Then verify the homepage....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login into OrangeHRM" name="Login into OrangeHRM 2" time="6.427">
+        <failure message="expected:&lt;...e.com/web/index.php/[auth/login]&gt; but was:&lt;...e.com/web/index.php/[dashboard/index]&gt;" type="junit.framework.ComparisonFailure"><![CDATA[Given i launch the browser and enter into orangeHRM site....................passed
+Given user enters "Admin" and "asfh1234"....................................passed
+And click on the login button...............................................passed
+Then verify the homepage....................................................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<...e.com/web/index.php/[auth/login]> but was:<...e.com/web/index.php/[dashboard/index]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.qa.stepdefinition.LoginStepdefinitions.verify_the_homepage(LoginStepdefinitions.java:50)
+	at ✽.verify the homepage(file:///C:/Users/Sehkar/eclipse-workspace/OrangeHRM/src/test/resources/Features/OrangeHRM_Login.feature:9)
+]]></failure>
+    </testcase>
+</testsuite>
