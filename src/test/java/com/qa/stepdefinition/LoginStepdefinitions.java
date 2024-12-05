@@ -42,14 +42,14 @@ public class LoginStepdefinitions {
 		
 	}
 	@Then("verify the homepage")
-	public void verify_the_homepage() {
+	public void verify_the_homepage() throws IOException, InterruptedException {
 
 		String currenturl = base.driver.getCurrentUrl();
 		System.out.println(currenturl);
 		
 		Assert.assertEquals(currenturl, "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
-		
-		
+		Thread.sleep(5000);
+		BaseClass.getscreenshot(base.driver, "screenshot");
 	}
 
 	

@@ -1,10 +1,18 @@
 package utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -45,6 +53,17 @@ public class BaseClass {
 			BaseClass.driver.manage().window().maximize();
 			BaseClass.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Thread.sleep(10000);		
-		} 
-}
+		} 	
+		
+      }
+	
+	public static void getscreenshot(WebDriver driver, String filename) throws IOException
+	{
+		 DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy h-m-s");
+	     Date date = new Date();
+        TakesScreenshot tk = (TakesScreenshot) driver;
+		File File = tk.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(File, new File("./screenshots/"+filename+"-"+dateFormat.format(date)+".png"));
+	}
+	
 }
