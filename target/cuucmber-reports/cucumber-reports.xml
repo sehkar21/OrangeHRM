@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.1">
-    <testcase classname="checking the OrangeHRM Myinfo" name="checking the OrangeHRM Myinfo" time="11.823">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.91">
+    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="11.697">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
-Given i click on the Myinfo leftpanel tab...................................passed
-Then i click on the profile picture.........................................passed
-Then i click on the plus icon and change the profile picture................passed
-Then i save the page........................................................passed
+Given user clicks on the Leave in the left panel............................passed
+Then user clicks on the Apply tab...........................................passed
+Then user selects the leave dates...........................................passed
+Then user saves the leave...................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

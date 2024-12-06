@@ -7,6 +7,8 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 
+import org.openqa.selenium.JavascriptExecutor;
+
 import com.objectRepo.LoginPage_OrangeHRM;
 import com.objectRepo.MyInfopage_OrangeHRM;
 
@@ -85,13 +87,43 @@ public class MyInfoStepdefinition {
 	}
 	@Then("i save the page")
 	public void i_save_the_page() {
+		
+		
 		MyInfopage_OrangeHRM MyInfopage_OrangeHRM = new MyInfopage_OrangeHRM(base);
 		MyInfopage_OrangeHRM.Myinfosavebtn();
+	
+	}
+
+	
+	@Then("i enter the {string} {string} and {string}")
+	public void i_enter_the_and(String firstname, String middlename, String lastname) throws InterruptedException {
+
+		MyInfopage_OrangeHRM MyInfopage_OrangeHRM = new MyInfopage_OrangeHRM(base);
+		MyInfopage_OrangeHRM.MYInfoFirstname(firstname);
+		MyInfopage_OrangeHRM.MYInfoMiddlename(middlename);
+		MyInfopage_OrangeHRM.MYInfoLastname(lastname);
+		
 
 		
+	}
+	@Then("i enter the {string} and {string}")
+	public void i_enter_the_and(String Employee_ID, String Other_ID) throws InterruptedException {
+		MyInfopage_OrangeHRM MyInfopage_OrangeHRM = new MyInfopage_OrangeHRM(base);
+		MyInfopage_OrangeHRM.MYInfoEmp_ID(Employee_ID);
+		MyInfopage_OrangeHRM.MyInfoOther_ID(Other_ID);
+		
+		
+
 		
 	}
-	
+	@Then("i click on the save button")
+	public void i_click_on_the_save_button() {
+		MyInfopage_OrangeHRM MyInfopage_OrangeHRM = new MyInfopage_OrangeHRM(base);
+		MyInfopage_OrangeHRM.Myinfo_savebtn();
+
+		
+	}
+
 	
 	
 	
