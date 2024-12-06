@@ -10,15 +10,8 @@ Feature: checking the OrangeHRM Myinfo
 
   Scenario: checking the OrangeHRM Myinfo 
     Given i click on the Myinfo leftpanel tab
-    Then i click on the 
+    Then i click on the profile picture
+    Then i click on the plus icon and change the profile picture
+    Then i save the page
 
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+ 

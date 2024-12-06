@@ -21,7 +21,7 @@ public class Hooks {
 	@After
 	public void teardown()
 	{
-		base.driver.close();
+		//base.driver.close();
 		System.err.println("---------------closing browser----------------");
 	}
 }

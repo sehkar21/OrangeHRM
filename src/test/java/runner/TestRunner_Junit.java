@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features ={"src\\test\\resources\\Features\\OrangeHRM_Login.feature"},
+		features ={"src\\test\\resources\\Features\\OrangeHRM_MyInfo.feature"},
 		glue = {"com.qa.stepdefinition","Hooks"},
 		dryRun=false,
 		plugin={"pretty", "html:target/cuucmber-reports/cucumber-reports.html",
