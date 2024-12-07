@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.033">
-    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="10.869">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="20.846">
+    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="10.173">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -8,6 +8,16 @@ Given user clicks on the Leave in the left panel............................pass
 Then user clicks on the Apply tab...........................................passed
 Then user selects the leave dates...........................................passed
 Then user saves the leave...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="10.329">
+        <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
+Then i enter the usrename and password......................................passed
+Then i click on the login button............................................passed
+Given user clicks on the Recruitment Leftpanel..............................passed
+Then user clicks on the vacancies tab.......................................passed
+Then user cliks on the jobtitle vacancies...................................passed
+Then uses clicks on the search button.......................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

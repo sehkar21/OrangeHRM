@@ -9,7 +9,13 @@ Feature: Apply Leave in OrangeHRM
 
   
   Scenario: Apply Leave in OrangeHRM 
-    Given user clicks on the Leave in the left panel
+   Given user clicks on the Leave in the left panel
    Then user clicks on the Apply tab
    Then user selects the leave dates
    Then user saves the leave 
+   
+  Scenario: Searches for Vacancies in the OrangeHRM 
+  	Given user clicks on the Recruitment Leftpanel
+  	Then user clicks on the vacancies tab
+  	Then user cliks on the jobtitle vacancies
+  	Then uses clicks on the search button
