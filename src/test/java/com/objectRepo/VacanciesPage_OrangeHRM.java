@@ -21,7 +21,7 @@ public class VacanciesPage_OrangeHRM {
 	By vacancy_dropdown = By.xpath("//div[@class='oxd-table-filter-area']//div[2]//div[1]//div[2]//div[1]//div[1]//div[2]//i[1]");
 	By vacancy = By.xpath("//span[normalize-space()='Payroll Administrator']");
 	By Hiringmanager_dropdown = By.xpath("//div[3]//div[1]//div[2]//div[1]//div[1]//div[2]//i[1]");
-	By Hiringmanager = By.cssSelector("div[role='option'] span");
+	By Hiringmanager = By.cssSelector("div[class='oxd-select-option'] span");
 	By status_dropdown = By.xpath("//div[4]//div[1]//div[2]//div[1]//div[1]//div[2]//i[1]");
 	By status = By.xpath("//span[normalize-space()='Active']");
 	By searchbtn = By.xpath("//button[normalize-space()='Search']");

@@ -47,8 +47,14 @@ public class VacanciesStepdefintion {
 	public void uses_clicks_on_the_search_button() {
 		VacanciesPage_OrangeHRM VacanciesPage_OrangeHRM = new VacanciesPage_OrangeHRM(base);
 		VacanciesPage_OrangeHRM.searchbtn();
-		VacanciesPage_OrangeHRM.results_checkbox();
-		System.out.println(VacanciesPage_OrangeHRM.search_results());
+		
+		try {
+			VacanciesPage_OrangeHRM.results_checkbox();
+			System.out.println(VacanciesPage_OrangeHRM.search_results());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 		

@@ -19,3 +19,14 @@ Feature: Apply Leave in OrangeHRM
   	Then user clicks on the vacancies tab
   	Then user cliks on the jobtitle vacancies
   	Then uses clicks on the search button
+  	
+  Scenario Outline: Adding employee in the PIM leftpanel
+  	Given user clicks on the PIM leftpanel
+  	Then user clicks on the AddEmployee tab
+  	Then user enter the "<firstname>" "<middlename>" "<lastname>" and "<EmployeeID>"
+  	And user adds the profile picture
+  	Then user clicks on the save button
+  	
+  	Examples: 
+  	|firstname|middlename|lastname|EmployeeID|
+  	|mary     |albert    |raino   |1234      |

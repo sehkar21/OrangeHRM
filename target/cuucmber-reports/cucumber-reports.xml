@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="20.846">
-    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="10.173">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="57.32">
+    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="17.299">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -10,7 +10,7 @@ Then user selects the leave dates...........................................pass
 Then user saves the leave...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="10.329">
+    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="25.512">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -18,6 +18,17 @@ Given user clicks on the Recruitment Leftpanel..............................pass
 Then user clicks on the vacancies tab.......................................passed
 Then user cliks on the jobtitle vacancies...................................passed
 Then uses clicks on the search button.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Apply Leave in OrangeHRM" name="Adding employee in the PIM leftpanel" time="14.044">
+        <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
+Then i enter the usrename and password......................................passed
+Then i click on the login button............................................passed
+Given user clicks on the PIM leftpanel......................................passed
+Then user clicks on the AddEmployee tab.....................................passed
+Then user enter the "mary" "albert" "raino" and "1234"......................passed
+And user adds the profile picture...........................................passed
+Then user clicks on the save button.........................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
