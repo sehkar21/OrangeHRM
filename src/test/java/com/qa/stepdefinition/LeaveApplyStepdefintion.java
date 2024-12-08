@@ -1,5 +1,7 @@
 package com.qa.stepdefinition;
 
+import java.io.IOException;
+
 import com.objectRepo.LeavePage_OrangeHRM;
 
 import io.cucumber.java.en.Given;
@@ -48,12 +50,21 @@ public class LeaveApplyStepdefintion {
 		
 	}
 	@Then("user saves the leave")
-	public void user_saves_the_leave() {
+	public void user_saves_the_leave() throws IOException {
+	try 
+		{
 
-		LeavePage_OrangeHRM LeavePage_OrangeHRM = new LeavePage_OrangeHRM(base);
-		LeavePage_OrangeHRM.LeaveApplyBtn();
-		
+			LeavePage_OrangeHRM LeavePage_OrangeHRM = new LeavePage_OrangeHRM(base);
+			LeavePage_OrangeHRM.LeaveApplyBtn();
+			BaseClass.getscreenshot(base.driver,"Screenshot");
+			
+		}
+	 
+	catch (IOException e)
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
 	}
 
-
+	}
 }

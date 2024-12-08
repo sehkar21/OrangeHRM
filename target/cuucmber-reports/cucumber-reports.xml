@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="57.32">
-    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="17.299">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="33.31">
+    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="11.005">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -10,7 +10,7 @@ Then user selects the leave dates...........................................pass
 Then user saves the leave...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="25.512">
+    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="10.331">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -20,7 +20,7 @@ Then user cliks on the jobtitle vacancies...................................pass
 Then uses clicks on the search button.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Apply Leave in OrangeHRM" name="Adding employee in the PIM leftpanel" time="14.044">
+    <testcase classname="Apply Leave in OrangeHRM" name="Adding employee in the PIM leftpanel" time="11.696">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
