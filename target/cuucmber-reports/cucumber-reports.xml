@@ -1,34 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="33.31">
-    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="11.005">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="44.84">
+    <testcase classname="Apply Leave in OrangeHRM" name="Updating the contact details in the My info" time="44.52">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
-Given user clicks on the Leave in the left panel............................passed
-Then user clicks on the Apply tab...........................................passed
-Then user selects the leave dates...........................................passed
-Then user saves the leave...................................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="10.331">
-        <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
-Then i enter the usrename and password......................................passed
-Then i click on the login button............................................passed
-Given user clicks on the Recruitment Leftpanel..............................passed
-Then user clicks on the vacancies tab.......................................passed
-Then user cliks on the jobtitle vacancies...................................passed
-Then uses clicks on the search button.......................................passed
-]]></system-out>
-    </testcase>
-    <testcase classname="Apply Leave in OrangeHRM" name="Adding employee in the PIM leftpanel" time="11.696">
-        <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
-Then i enter the usrename and password......................................passed
-Then i click on the login button............................................passed
-Given user clicks on the PIM leftpanel......................................passed
-Then user clicks on the AddEmployee tab.....................................passed
-Then user enter the "mary" "albert" "raino" and "1234"......................passed
-And user adds the profile picture...........................................passed
-Then user clicks on the save button.........................................passed
+Given user clicks on the My info leftpanel..................................passed
+Then user clicks on the contact details menu................................passed
+Then user updates the Address...............................................passed
+Then user updates the Telephone details.....................................passed
+Then user updates the Email details.........................................passed
+Then user clicks on the Myinfo conatct update save button...................passed
 ]]></system-out>
     </testcase>
 </testsuite>

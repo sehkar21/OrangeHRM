@@ -2,7 +2,7 @@
 @reg
 Feature: Apply Leave in OrangeHRM 
  
-   Background: 
+ Background: 
   Given i login into the OrangeHRM site
   Then i enter the usrename and password
   Then i click on the login button
@@ -30,3 +30,14 @@ Feature: Apply Leave in OrangeHRM
   	Examples: 
   	|firstname|middlename|lastname|EmployeeID|
   	|mary     |albert    |raino   |1234      |
+  	|mary     |albert    |raino   |1234      |
+  	
+  	
+  	@sanity
+  	Scenario: Updating the contact details in the My info
+  	Given user clicks on the My info leftpanel
+  	Then user clicks on the contact details menu
+  	Then user updates the Address
+  	Then user updates the Telephone details
+  	Then user updates the Email details
+  	Then user clicks on the Myinfo conatct update save button

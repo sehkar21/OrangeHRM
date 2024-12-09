@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions;
 				"junit:target/cuucmber-reports/cucumber-reports.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failed.txt"},
-		tags = ("@reg or ~@sanity"),
+		tags = ("@reg or @sanity"),
 		monochrome=true
 		
 		)
