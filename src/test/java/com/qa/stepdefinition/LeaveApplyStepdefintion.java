@@ -51,6 +51,7 @@ public class LeaveApplyStepdefintion {
 	}
 	@Then("user saves the leave")
 	public void user_saves_the_leave() throws IOException {
+<<<<<<< HEAD
 	try 
 		{
 
@@ -64,6 +65,13 @@ public class LeaveApplyStepdefintion {
 	{
 		// TODO Auto-generated catch block
 		e.printStackTrace();
+=======
+
+		LeavePage_OrangeHRM LeavePage_OrangeHRM = new LeavePage_OrangeHRM(base);
+		LeavePage_OrangeHRM.LeaveApplyBtn();
+		BaseClass.getscreenshot(base.driver, "Screenshot");
+		
+>>>>>>> 59d601066e010fa33ed53b624b8661e1e463a45c
 	}
 
 	}
