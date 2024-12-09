@@ -26,10 +26,10 @@
     <thumbnailForBase64>thumbnails</thumbnailForBase64>
 
     <!-- title of the document -->
-    <documentTitle>BookCart Test Report</documentTitle>
+    <documentTitle>Orange HRM</documentTitle>
 
     <!-- report name - displayed at top-nav -->
-    <reportName>BDD Tests</reportName>
+    <reportName>Cucumber BDD Tests</reportName>
 
     <!-- timestamp format -->
     <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>

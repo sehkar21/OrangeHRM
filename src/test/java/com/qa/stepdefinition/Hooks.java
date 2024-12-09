@@ -1,7 +1,11 @@
 package com.qa.stepdefinition;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import utils.BaseClass;
 
 public class Hooks {
@@ -18,7 +22,21 @@ public class Hooks {
 		System.out.println("----------------Opening browser--------------");
 	}
 	
-	@After
+	
+	
+	@After(order = 1)
+	public void afterScenario(Scenario scenario) throws InterruptedException {
+		boolean failed = scenario.isFailed();
+		System.out.println("is Failed? "+failed);
+		if(failed) {
+			Thread.sleep(5000);
+			byte[] screenshotAs =((TakesScreenshot) base.driver).getScreenshotAs(OutputType.BYTES);
+			scenario.attach(screenshotAs, "image/png", "failed");
+			
+		}
+		
+	}	
+	@After(order=0)
 	public void teardown()
 	{
 		base.driver.close();

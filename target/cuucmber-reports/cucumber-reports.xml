@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="33.31">
-    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="11.005">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="221.632">
+    <testcase classname="Apply Leave in OrangeHRM" name="Apply Leave in OrangeHRM" time="25.795">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -10,7 +10,7 @@ Then user selects the leave dates...........................................pass
 Then user saves the leave...................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="10.331">
+    <testcase classname="Apply Leave in OrangeHRM" name="Searches for Vacancies in the OrangeHRM" time="46.238">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -20,7 +20,7 @@ Then user cliks on the jobtitle vacancies...................................pass
 Then uses clicks on the search button.......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Apply Leave in OrangeHRM" name="Adding employee in the PIM leftpanel" time="11.696">
+    <testcase classname="Apply Leave in OrangeHRM" name="Adding employee in the PIM leftpanel" time="19.09">
         <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
 Then i enter the usrename and password......................................passed
 Then i click on the login button............................................passed
@@ -29,6 +29,47 @@ Then user clicks on the AddEmployee tab.....................................pass
 Then user enter the "mary" "albert" "raino" and "1234"......................passed
 And user adds the profile picture...........................................passed
 Then user clicks on the save button.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login into OrangeHRM" name="Login into OrangeHRM" time="34.998">
+        <system-out><![CDATA[Given i launch the browser and enter into orangeHRM site....................passed
+Given user enters "Admin" and "admin123"....................................passed
+And click on the login button...............................................passed
+Then verify the homepage....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login into OrangeHRM" name="Login into OrangeHRM 2" time="25.249">
+        <failure message="expected:&lt;...e.com/web/index.php/[auth/login]&gt; but was:&lt;...e.com/web/index.php/[dashboard/index]&gt;" type="junit.framework.ComparisonFailure"><![CDATA[Given i launch the browser and enter into orangeHRM site....................passed
+Given user enters "Admin" and "asfh1234"....................................passed
+And click on the login button...............................................passed
+Then verify the homepage....................................................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<...e.com/web/index.php/[auth/login]> but was:<...e.com/web/index.php/[dashboard/index]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at com.qa.stepdefinition.LoginStepdefinitions.verify_the_homepage(LoginStepdefinitions.java:50)
+	at ✽.verify the homepage(file:///C:/Users/sehka/eclipse-workspace/OrangeHRM/src/test/resources/Features/OrangeHRM_Login.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="checking the OrangeHRM Myinfo" name="checking the OrangeHRM Myinfo" time="22.425">
+        <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
+Then i enter the usrename and password......................................passed
+Then i click on the login button............................................passed
+Given i click on the Myinfo leftpanel tab...................................passed
+Then i click on the profile picture.........................................passed
+Then i click on the plus icon and change the profile picture................passed
+Then i save the page........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="checking the OrangeHRM Myinfo" name="checking the OrangeHRM Myinfo 2" time="47.477">
+        <system-out><![CDATA[Given i login into the OrangeHRM site.......................................passed
+Then i enter the usrename and password......................................passed
+Then i click on the login button............................................passed
+Given i click on the Myinfo leftpanel tab...................................passed
+Then i enter the "Albert" "maino" and "antony"..............................passed
+Then i enter the "123456" and "98765".......................................passed
+Then i click on the save button.............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
