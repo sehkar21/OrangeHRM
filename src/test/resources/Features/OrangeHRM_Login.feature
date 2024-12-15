@@ -1,4 +1,4 @@
-@sanity
+@reg @sanity
 Feature: Login into OrangeHRM
 
   @sanity
