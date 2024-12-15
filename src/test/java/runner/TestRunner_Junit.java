@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features ={"src\\test\\resources\\Features\\OrangeHRM_LeaveApply.feature",
 				"src\\test\\resources\\Features\\OrangeHRM_Login.feature",
-				"src\\test\\resources\\Features\\OrangeHRM_MyInfo.feature"
+				"src\\test\\resources\\Features\\OrangeHRM_MyInfo.feature",
+				"src\\test\\resources\\Features\\OrangeHRM_Recruitment.feature"
 		},
 		glue = {"com.qa.stepdefinition","Hooks"},
 		dryRun=false,
@@ -18,7 +19,7 @@ import io.cucumber.junit.CucumberOptions;
 				"junit:target/cuucmber-reports/cucumber-reports.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failed.txt"},
-		tags = ("@reg or @sanity"),
+		tags = ("@adhoc or @reg"),
 		monochrome=true
 		
 		)

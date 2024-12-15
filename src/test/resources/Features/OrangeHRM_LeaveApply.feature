@@ -30,3 +30,25 @@ Feature: Apply Leave in OrangeHRM
   	Examples: 
   	|firstname|middlename|lastname|EmployeeID|
   	|mary     |albert    |raino   |1234      |
+  	
+  	@new
+  	Scenario: Adding project details in the Time Leftpanel
+  	Given user clicks on the Time Left panel
+  	Then user clicks on the projectinfo tab and project menu
+  	Then user clicks on the add button
+  	Then user enter the details 
+  	Then user clicks on the button in the project info tab
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
